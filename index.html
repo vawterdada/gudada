@@ -2,91 +2,86 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>古哒哒研究所</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        html, body {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            height: 100%;
+            min-height: 100%; /* 确保至少为视口高度 */
+        }
+
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1; /* 使内容区域填充剩余空间 */
+            padding: 5%; /* 根据需要添加内边距 */
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: auto; /* 将footer推到底部 */
+            background: #f9f9f9;
             color: #333;
         }
-        
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        
-        header {
-            background: #333;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        
-        header h1 {
-            display: inline-block;
-            font-size: 30px;
-            line-height: 70px;
-            margin: 0;
-        }
-        
-        .buttons {
-            margin: 40px 0;
-        }
-        
+
         .button {
             display: inline-block;
-            color: #fff;
-            text-decoration: none;
-            border: 1px solid #e8491d;
-            margin: 10px;
-            padding: 10px 20px;
+            margin: 10px 5px;
+            padding: 10px 30px;
             font-size: 16px;
-            transition: all 0.3s ease-in-out;
+            color: #fff;
+            background-color: #5dade0;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-        
+
         .button:hover {
-            background: #e8491d;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            clear: both;
+            background-color: #4a90e2;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="container">
+<div class="wrapper">
+    <header>
         <h1>古哒哒研究所</h1>
+    </header>
+    
+    <div class="content">
+        <!-- 页面主要内容放这里 -->
+        <section class="buttons container">
+            <!-- 按钮或其他内容 -->
+            <a href="#" class="button">搞钱专栏</a>
+            <a href="#" class="button">项目二</a>
+            <a href="#" class="button">项目三</a>
+            <a href="#" class="button">项目四</a>
+            <a href="#" class="button">项目五</a>
+            <a href="#" class="button">项目六</a>
+            <a href="#" class="button">项目七</a>
+            <a href="#" class="button">项目八</a>
+            <a href="#" class="button">项目九</a>
+            <a href="#" class="button">项目十</a>
+        </section>
     </div>
-</header>
-
-<section class="buttons container">
-    <a href="#" class="button">项目一</a>
-    <a href="#" class="button">项目二</a>
-    <a href="#" class="button">项目三</a>
-    <a href="#" class="button">项目四</a>
-    <a href="#" class="button">项目五</a>
-    <a href="#" class="button">项目六</a>
-    <a href="#" class="button">项目七</a>
-    <a href="#" class="button">项目八</a>
-    <a href="#" class="button">项目九</a>
-    <a href="#" class="button">项目十</a>
-</section>
-
-<footer>
-    <div class="container">
-        <p>Power by 古哒哒研究所 2023</p>
-    </div>
-</footer>
+    
+    <footer>
+        <p>版权所有 &copy; 古哒哒研究所 2023</p>
+    </footer>
+</div>
 
 </body>
 </html>
