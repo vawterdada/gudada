@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Realistic Image Generator Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .fullframe {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .iframe-element {
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .floating-button {
+            position: fixed;
+            bottom: 30px;
+            left: 20px;
+            background-color: #dbdad7;
+            color: black;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .floating-button:hover {
+            background-color: #dbdad7;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .floating-button i {
+            margin-right: 10px;
+            position: absolute;
+            bottom: 0; 
+            left: 50%;
+            transform: translateX(-50%);
+      }
+    </style>
+</head>
+
+<body>
+    <div class="fullframe">
+        <iframe class="iframe-element" allowfullscreen="true" frameborder="0" src="https://gokaygokay-kolors.hf.space">
+        </iframe>
+    </div>
+
+    <div class="floating-button">
+    <img src="./640.webp" width="120" height="120" alt="扫码关注" style="margin-bottom: 10px;">
+    <i style="display: block; text-align: center;">扫码关注公众号</i>
+    </div>
+    
+  
+</body>
+
+</html>
